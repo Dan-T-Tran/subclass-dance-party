@@ -3,6 +3,9 @@ body, html{
 }
 body{
   margin: 0px;
+  background-image: url("assets/mars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color:#444;
   font-size: 18px;
 }
@@ -13,6 +16,21 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+
+.addDancerButton {
+  margin: 0 10px;
+  background-color: #444;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  border: 1px solid #111;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+.addDancerButton:hover {
+  color: white;
+  letter-spacing: 3px;
+}
+
 .topbar{
   height:32px;
   background-color: #555;
@@ -23,5 +41,8 @@ body, a:link, a:visited, a:active{
 .dancer{
   border:10px solid red;
   border-radius:10px;
+  position:absolute;
+}
+.ETDancer{
   position:absolute;
 }
