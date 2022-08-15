@@ -3,46 +3,72 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image: url("assets/mars.jpg");
+  background-image: url("assets/mars2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color:#444;
   font-size: 18px;
 }
-body, a:link, a:visited, a:active{
+
+.title {
   color: lightblue;
 }
+
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
 }
 
+.title:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .addDancerButton {
-  margin: 0 10px;
-  background-color: #444;
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
-  border: 1px solid #111;
-  border-radius: 4px;
-  transition: all 0.5s ease;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  margin: 0 30px;
+  transition: all 0.3s ease-in-out;
 }
+
 .addDancerButton:hover {
   color: white;
-  letter-spacing: 3px;
+  transition: 0.5s;
+  letter-spacing: 1.5px;
 }
 
 .topbar{
+  display: flex;
+  justify-content: flex-start;
   height:32px;
-  background-color: #555;
+  background-color: #395B64;
 }
+
 .title{
-  background-color: #777;
+  background-color: #2C3333;
+  font-size: 20px;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  /* border:10px solid red; */
+  /* border-radius:10px; */
   position:absolute;
+  width: 80px;
 }
 .ETDancer{
-  position:absolute;
+  /* position:absolute; */
+  transition: all 1s;
 }
+.spinningDancer{
+  /* position:absolute; */
+  width: 80px;
+}
+.logo{
+  width: 30px;
+  padding-right: 5px;
+}
+/* .clearButton{
+  float: right;
+} */

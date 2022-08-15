@@ -20,14 +20,40 @@ $(document).ready(function() {
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
+    // make a dancer spin
+
+
     // make a dancer with a random position
+
+    // attempting to make audio play on mouseover
+
+    // var audio = new Audio('assets/wow.mp3');
 
     var dancer = new dancerMakerFunction(
       $("body").height() * (Math.random() * 0.95),
       $("body").width() * (Math.random() * 0.95),
-      Math.random() * 1000
+      100 + (Math.random() * 900)
     );
+
+    // var audio = new Audio('assets/wow.mp3');
+
+    $(dancer.$node).mouseover(function() {
+      $(dancer.$node).css({'width': '150px'});
+      // audio.play();
+    });
+    $(dancer.$node).mouseout(function() {
+      $(dancer.$node).css({'width': '80px'});
+      // audio.pause();
+      // audio.currentTime = 0;
+    });
+
     $('body').append(dancer.$node);
   });
+
+  $('.title').on('click', function() {
+    document.querySelectorAll(".dancer").forEach(img => img.remove());
+
+    // $('body').remove('.dancer');
+  })
 });
 
